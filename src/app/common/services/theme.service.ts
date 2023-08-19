@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import {Injectable} from '@angular/core';
+import {BehaviorSubject} from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -8,7 +8,8 @@ export class ThemeService {
   public default = 'light';
   public themeChanged: BehaviorSubject<string> = new BehaviorSubject(this.theme);
 
-  constructor() {}
+  constructor() {
+  }
 
   public get theme(): string {
     return localStorage.getItem('theme') ?? this.default;
