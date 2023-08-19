@@ -5,11 +5,12 @@ import {MenuItem, SubMenuItem} from "../../../../common/models/menu.model";
 import {MenuService} from "../../../services/menu.service";
 import {AngularSvgIconModule} from "angular-svg-icon";
 import {SidebarSubmenuComponent} from "../sidebar-submenu/sidebar-submenu.component";
+import {RouterLink, RouterLinkActive} from "@angular/router";
 
 @Component({
   selector: 'app-sidebar-menu',
   standalone: true,
-  imports: [CommonModule, AngularSvgIconModule, SidebarSubmenuComponent],
+  imports: [CommonModule, AngularSvgIconModule, SidebarSubmenuComponent, RouterLinkActive, RouterLink],
   templateUrl: './sidebar-menu.component.html',
   styleUrls: ['./sidebar-menu.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

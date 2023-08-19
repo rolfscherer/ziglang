@@ -5,11 +5,12 @@ import {MenuItem, SubMenuItem} from "../../../../../common/models/menu.model";
 import {MenuService} from "../../../../services/menu.service";
 import {NavbarMobileSubmenuComponent} from "../navbar-mobile-submenu/navbar-mobile-submenu.component";
 import {AngularSvgIconModule} from "angular-svg-icon";
+import {RouterLink, RouterLinkActive} from "@angular/router";
 
 @Component({
   selector: 'app-navbar-mobile-menu',
   standalone: true,
-  imports: [CommonModule, NavbarMobileSubmenuComponent, AngularSvgIconModule],
+  imports: [CommonModule, NavbarMobileSubmenuComponent, AngularSvgIconModule, RouterLinkActive, RouterLink],
   templateUrl: './navbar-mobile-menu.component.html',
   styleUrls: ['./navbar-mobile-menu.component.scss']
 })

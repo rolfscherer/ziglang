@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import {Observable} from "rxjs";
 import {MenuService} from "../../../services/menu.service";
 import {AngularSvgIconModule} from "angular-svg-icon";
+import {NavbarMobileMenuComponent} from "./navbar-mobile-menu/navbar-mobile-menu.component";
 
 @Component({
   selector: 'app-navbar-mobile',
   standalone: true,
-  imports: [CommonModule, AngularSvgIconModule],
+  imports: [CommonModule, AngularSvgIconModule, NavbarMobileMenuComponent],
   templateUrl: './navbar-mobile.component.html',
   styleUrls: ['./navbar-mobile.component.scss']
 })

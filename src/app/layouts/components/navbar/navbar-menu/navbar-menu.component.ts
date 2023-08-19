@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import {Observable} from "rxjs";
 import {MenuItem} from "../../../../common/models/menu.model";
 import {MenuService} from "../../../services/menu.service";
+import {NavbarSubmenuComponent} from "../navbar-submenu/navbar-submenu.component";
 
 @Component({
   selector: 'app-navbar-menu',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, NavbarSubmenuComponent],
   templateUrl: './navbar-menu.component.html',
   styleUrls: ['./navbar-menu.component.scss']
 })
