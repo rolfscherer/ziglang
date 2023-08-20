@@ -21,10 +21,11 @@
         <div>
           <!-- Logo -->
           <div class="flex items-center justify-start sm:order-2 md:mr-10 lg:hidden">
-            <a class="flex items-center justify-center rounded bg-primary-500 p-2 focus:outline-none focus:ring-1">
-              <svg-icon src="assets/icons/logo.svg"> </svg-icon>
+            <a class="flex items-center justify-center focus:outline-none">
+              <img *ngIf="themeService.isDark" ngSrc="assets/img/zig-logo-light.svg" height="28" width="62"/>
+              <img *ngIf="!themeService.isDark" ngSrc="assets/img/zig-logo-dark.svg" height="28" width="62"/>
             </a>
-            <b class="pl-3 text-sm font-bold dark:text-night-50"> Angular Tailwind </b>
+
           </div>
         </div>
         <div class="-mr-2">
